@@ -4,9 +4,9 @@ import Home from './pages/home';
 
 let App: FC = () => {
   return (
-    <div>
+    <>
       <Home/>
-    </div>
+    </>
   );
 }
 
