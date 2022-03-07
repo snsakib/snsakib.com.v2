@@ -1,15 +1,18 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.scss';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Layout from './shared/layout';
+import Router from './router';
 
 ReactDOM.render(
   <StrictMode>
-    <Layout>
-      <App />
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Router/>
+      </Layout>
+    </BrowserRouter>
   </StrictMode>,
   document.getElementById('root')
 );
