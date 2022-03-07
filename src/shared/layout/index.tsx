@@ -1,11 +1,12 @@
 import { FC } from "react";
 import './layout.scss';
+import Header from './components/header';
 
-let Layout: FC = ({ children }) => {
+let Layout: FC = ({children}) => {
   return (
     <>
-      <div>Header</div>
-      { children }
+      <Header/>
+      {children}
       <div>Footer</div>
     </>
   );
