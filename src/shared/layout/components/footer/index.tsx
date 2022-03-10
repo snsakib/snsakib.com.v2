@@ -1,8 +1,9 @@
 import { FC } from "react";
+import Styles from './index.module.scss';
 
 let Footer: FC = () => {
   return(
-    <footer>
+    <footer className={Styles.footer}>
       Footer
     </footer>
   )
