@@ -1,3 +1,22 @@
+.container {
+  border: 1px solid red;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .profile_picture {
   border-radius: 50%;
+}
+
+@media screen and (min-width: 475px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .profile_picture {
+    order: 1;
+  }
 }
